@@ -442,6 +442,49 @@ fn read_diary<'a>(diary: &'a Diary)
 
 ---
 
+# Moduler og namespaces
+
+```rust
+// also equivalent to placing the contents in `diary_module.rs`
+// and writing `mod diary_module;` here insteead
+mod diary_module {
+  struct Diary;
+  struct SomethingElse;
+}
+
+// we can use items within modules using ::
+fn read_diary(diary: &diary_module::Diary) {
+}
+
+// or import them using `use`
+use diary_module::Diary;
+// Or import multiple values
+use diary_module::{Diary, SomethingElse};
+```
+
+---
+
+# Bruker også `::` for å gå inni typer
+
+Kan brukes til å hente ut alle ting som er _statiske_
+
+```rust
+enum MinType {
+  MinVariant
+}
+
+impl MinType {
+  fn min_metode() {
+  }
+}
+
+// Kan nåes med
+MinType::MinVariant;
+MinType::min_metode();
+```
+
+---
+
 # Mye mer å lære, men her er noen tips på vei
 
 - VS Code med rust-analyzer eller IntelliJ/Clion med Rust-pluginen
