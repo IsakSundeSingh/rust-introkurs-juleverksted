@@ -485,6 +485,20 @@ MinType::min_metode();
 
 ---
 
+# Cargo
+
+Rustup installerer Cargo, et multiverktøy med alt du trenger til Rust. Cargo kan gjøre bl.a. dette
+
+- Lage nye prosjekter: `cargo new navn`
+- Hente dependencies, kompilere og kjøre koden: `cargo run`
+- Legge til dependencies: `cargo add navn-på-dependency`
+- Kjøre tester: `cargo test`
+- Publisere koden din som en pakke: `cargo publish`
+- Kjøre benchmarks: `cargo bench`
+- Fikse feil i koden din: `cargo fix`
+
+---
+
 # Mye mer å lære, men her er noen tips på vei
 
 - VS Code med rust-analyzer eller IntelliJ/Clion med Rust-pluginen
