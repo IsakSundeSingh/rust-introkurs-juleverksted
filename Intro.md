@@ -183,13 +183,13 @@ Tilsvarer `null` i andre språk, men er ikke en default-verdi _alt_ kan ha
 # Rust primitive data types
 
 - `bool` som er `true` eller `false`
-- Talltyper:
-  - `i32`: heltall som er 32 bits, signed, fra `-2147483648` til `2147483647`
-  - `u32`: heltall som er 32 bits, unsigned, fra `0` til `4294967295`
-  - Flyttall: `f32`, `f64`
-  - Resten av helltallene: `u8`, `i8`, `u16`, `i16`, `u64`, `i64`, `u128`, `i128`
-  - `usize` og `isize` som er antall bits i arkitekturen på CPU (64-bit)
+- `i32`: heltall som er 32 bits, signed, fra `-2147483648` til `2147483647`
+- `u32`: heltall som er 32 bits, unsigned, fra `0` til `4294967295`
+- Flyttall: `f32`, `f64`
+- Resten av helltallene: `u8`, `i8`, `u16`, `i16`, `u64`, `i64`, `u128`, `i128`
+- `usize` og `isize` som er antall bits i arkitekturen på CPU (64-bit)
 - Unit: `()`, den tomme typen, ligner på `void` i andre språk
+- `1..100`, exclusive range med alle tall f.o.m 1 til 100, `1..=100`, inclusive range emd alle tall f.o.m. 1 t.o.m. 100
 
 ---
 
