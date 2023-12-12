@@ -485,6 +485,33 @@ MinType::min_metode();
 
 ---
 
+# Løkker og sånt
+
+Rust har også løkker på lik linje som andre språk:
+
+- `while`-loops, a la `while condition { body }`
+- `for`-løkker, a la `for i in 0..100 { body}`
+- `loop`-løkker, a la `loop { forever }`
+
+---
+
+# Iteratorer
+
+Dersom du skal prosessere data er det vanlig og idiomatisk å bruke iteratorer. Altså med `.map`, `.filter`, `.fold` og en haug andre hjelpefunksjoner. Dersom du har en liste med ting ville vi kanskje skrevet noe slikt:
+
+```rust
+noe_som_kan_itereres_over
+  .iter()
+  .map(|x| x * 2)
+  //   ^^^^^^^^^
+  // En closure i Rust, med argumentene innenfor |pipes|
+  .filter(|x| x < 25)
+  .fold(0, |sum, x| sum + x) // eller bare .sum()
+  // osv.
+```
+
+---
+
 # Cargo
 
 Rustup installerer Cargo, et multiverktøy med alt du trenger til Rust. Cargo kan gjøre bl.a. dette
